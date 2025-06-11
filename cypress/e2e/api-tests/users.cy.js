@@ -113,7 +113,7 @@ describe('Testes relacionados a usuários', () => {
       });
   });
 
-  it('Deve retornar status 409 para a criação de usuário - Usuário existente - Nome e Email mesmo usuário', () => {
+  it('Deve retornar status 409 para a criação de usuário - Usuário existente - Nome e Email com mesmo usuário', () => {
     cy.fixture('users').then((usuarios) => {
       const indiceAleatorio = Math.floor(Math.random() * usuarios.length);
       const usuarioAleatorio = usuarios[indiceAleatorio];
